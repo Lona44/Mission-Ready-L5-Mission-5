@@ -1,0 +1,28 @@
+{
+  "name": "auction-seeder",
+  "version": "1.0.0",
+  "description": "CLI tool to seed and manage auction data in MongoDB",
+  "main": "src/index.js",
+  "bin": {
+    "auction-seeder": "./src/index.js"
+  },
+  "scripts": {
+    "seed": "node src/index.js seed",
+    "delete": "node src/index.js delete",
+    "list": "node src/index.js list",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["mongodb", "cli", "auction", "seeder"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "mongoose": "^8.8.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.2"
+  }
+}
